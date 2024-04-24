@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit.html" method="post">
+        <p>
+        <label>First name</label>
+        <input type="text" name="firstname" required>
+        </p>
+        <p>
+        <label for="">Last Name</label>
+        <input type="text" name="lastname" required>
+         </p>
+        <label>Address</label>
+        <input type="text">
+        <P>
+        <label>Email</label>
+        <input type="email" required>
+        </P>
+        <p>
+        <label>Password</label>
+        <input type="Password" name="password" id="pswd">
+        </p>
+
+        <div>
+            <label>Confirm Password</label>
+            <input type="Password" name="confirm_password" id="confirm_pswd" required>
+        </div>
+        <br>
+        <div>
+            <label>Sex</label>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female
+        </div>
+<br>
+        <div>
+            <label>Hobbies</label>
+            <input type="checkbox" name="hobbies" value="Sleeping">Sleeping
+            <input type="checkbox" name="hobbies" value="Eating">Eating
+            <input type="checkbox" name="hobbies" value="Dancing">Dancing
+            <input type="checkbox" name="hobbies" value="Jumping">Jumping   
+        
+        </div>
+<br>
+        <div>
+            <label>Who is the president of Nigeria</label>
+            <input type="radio" name="president" value="Atiku">Atiku
+            <input type="radio" name="president" value="Tinubu">Tinubu
+            <input type="radio" name="president" value="Obi">OBi
+           <input type="radio" name="president" value="MD">Md
+        </div>
+    <br>
+        <div>
+            <label>Select your favorite color</label>
+            <input type="color" name="color";>
+
+        </div>
+    <br>
+
+    <div>
+        <label>What state are you from?</label>
+        <Select>
+            <option value="ogun">Ogun</option>
+            <option value="oyo">Oyo</option>
+            <option value="lagos">Lagos</option>
+            <option value="rivers">Rivers</option>
+            <option value="ekiti">ekiti</option>
+
+        </Select>
+    </div>
+<br>
+    
+<div>
+    <label>What state are you from?</label>
+    <Select>
+        <option value="ogun">Ogun</option>
+        <option value="oyo">Oyo</option>
+        <option value="lagos">Lagos</option>
+        <option value="rivers">Rivers</option>
+        <option value="ekiti">ekiti</option>
+
+    </Select>
+</div>
+
+
+        <div>
+            <label>Choose your date</label>
+            <input type="date" name="color";>
+
+        </div>
+        <br>
+
+
+
+
+        </div>
+<script>
+    var Password = document.getElementById( 'password').value; 
+
+    var confirmPassword = document.getElementById( 'confirm_pswd').value; 
+
+    if(Password != confirmPassword)
+    {
+        alert('419');
+    }
+
+</script>
+
+
+
+
+
+
+
+        <button type="submit">REGISTER</button>
+        
+
+
+
+    </form>
+
+
+
+
+
+
+</body>
+</html>

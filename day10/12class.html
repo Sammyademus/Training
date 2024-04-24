@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+   <style>
+        .container{
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        /* its not compulsory to wrap using body, you can as well use container and add class */
+        
+        .school{
+            height: 900x;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            border: 1px dashed black;
+            flex-direction: row;
+        }
+        
+        .a{
+            height: 300px;
+            width: 30%;
+            border: 1px black solid;
+            display: flex;
+            flex-direction: column;
+            
+           
+            
+        }
+        #boy{
+            height: 150px;
+            width: 100%;
+            /* overflow-wrap: normal; */
+            /* border: 1px solid red; */
+        }
+        #girl{
+            height: 150px;
+            width: 100%;
+            /* vertical-align: top; */
+            /* margin-top: -18px; */
+            /* border: 1px solid blue; */
+            display: flex;
+            flex-direction: row;
+           
+        }
+        #boy img{
+            width: 100%;
+            height: 150px;
+        }
+
+        .lagos{
+            height: 150px;
+            width: 50%;
+            border: 1px solid red;
+            background-color: yellow;
+        }
+
+   </style>
+</head>
+<body>
+    
+   <div class="container">
+        <div class="school">
+            <div class="a">
+                <div id="boy"><img src="../image/brt.jpeg" alt=""></div>
+                <div id="girl">
+                    <div class="lagos"></div>
+                    <div class="lagos"></div>   
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="school">
+            <div class="a">
+                <div id="boy"><img src="../image/brt.jpeg" alt=""></div>
+                <div id="girl">
+                    <div class="lagos"></div>
+                    <div class="lagos"></div>   
+                </div>
+            </div>
+        </div>
+
+        <div class="school">
+            <div class="a">
+                <div id="boy"><img src="../image/brt.jpeg" alt=""></div>
+                <div id="girl">
+                    <div class="lagos"></div>
+                    <div class="lagos"></div>   
+                </div>
+            </div>    
+        </div> -->
+    </div>
+
+
+   <!-- Old convention of dividing mother div -->
+
+</body>
+</html>
