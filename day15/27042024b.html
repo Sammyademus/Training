@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+.
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+   <!-- <style>
+    
+    th, td{
+        color: blue;
+        border: 1px solid red;
+    }
+
+    td{
+        color: green;
+        border: 1px solid red;
+        text-align: center;
+        padding: 50px;
+
+    }
+
+   </style> -->
+
+
+</head>
+<body>
+
+    <!-- Form in Tailwind CSS - table for representation of data
+    
+    use border border-green
+    Also put form tag
+    there are forms without placeholder- -->
+
+    <h2 class="text-center font-bold font-2xl mt-4">Form in Tailwind CSS</h2>
+
+    <Form>
+
+        <div>
+            <label class="text-xl font-bold text-green-500">First Name</label>
+            <input type="text"
+            name="firstname"
+            placeholder="Enter your first name"
+            class="block w-full rounded-md border-5 py-1.5 px-3 text-green-600 placeholder-yellow-500
+            border border-red-600 focus:outline-none focus:ring-1 focus:ring-blue-900">
+        
+        </div>
+        <br>
+        <div>
+
+            <label class="text-xl font-bold text-green-500">Tell us about yourself</label>
+            <textarea name="about" rows="2" placeholder="Tell us about yourself" class="block w-full rounded-md border-5 py-1.5 px-3
+            text-green-600 placeholder-yellow-500 border border-red-600 focus:outline-none focus:ring-1 focus:ring-blue-900"></textarea>
+
+        </div>
+
+
+
+    </Form>
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>
