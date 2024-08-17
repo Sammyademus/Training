@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+
+<body>
+
+
+    <p id="bimbo">Hello World</p>
+    <!-- <p id="bimbo">Hello World</p>
+    <p id="bimbo">Hello World</p>
+    <p id="bimbo">Hello World</p> -->
+
+
+    <p class="bimbo">Hello World</p>
+    <!-- <p class="bimbo">Hello World</p>
+    <p class="bimbo">Hello World</p>
+    <p class="bimbo">Hello World</p> -->
+
+
+    <script type="text/javascript">
+
+        var newText = document.getElementById('bimbo').innerHTML = 'Welcome World'
+
+        // var newText = document.getElementsByClassName('bimbo').innerHTML
+
+        alert(newText)
+
+
+        // with only .innerHTML, you get only what is in the p tag
+
+        // with = sign, you get Welcome world instead of hello world!
+
+        // class gets array of data while id gets only one element
+
+        // value gets input from form
+
+    </script>
+
+
+</body>
+
+</html>

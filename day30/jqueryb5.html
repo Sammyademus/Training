@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="result"></p>
+
+    <form id="reg_form">
+
+        <p>
+            <label>Firstname </label>
+            <input type="text" name="firstname" id="firstname">
+        </p>
+        <p>
+            <label>Lastname</label>
+            <input type="text" name="lastname" id="lastname">
+        </p>
+        <p>
+            <label>email</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <p>
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password">
+        </p>
+        <p>
+            <button id="btns">Register</button>
+        </p>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#btns').click(function () {
+                var firstname = $('#firstname').val();
+                var lastname = $('#lastname').val();
+                var email = $('#email').val();
+                var password = $('#password').val();
+                var confirmPassword = $('#confirm_password').val();
+
+                //how do we validate
+
+                if (firstname == "" || lastname == "" || email == "" || password == "" || confirmPassword == "") {
+                    $('#result').html('please complete the fields');
+                    $('#result').css({ 'background-color': "red" });
+                    $('#result').css({ 'padding': "5px" });
+                    $('#result').css({ 'color': "white" });
+
+                } else if (password != confirmPassword) {
+                    $('#result').html('Password do not match');
+                    $('#result').css({ 'background-color': "red" });
+                    $('#result').css({ 'padding': "5px" });
+                    $('#result').css({ 'color': "white" });
+
+                } else {
+                    $('#result').html('Register Successfully');
+                    $('#result').css({ 'background-color': "green" });
+                    $('#result').css({ 'padding': "5px" });
+                    $('#result').css({ 'color': "white" });
+                }
+
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button id="btns">Greet All</button>
+
+    <p>Welcome to Class</p>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('p').hide()
+
+            $('#btns').click(function () {
+                $('p').show()
+            })
+
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Hello</p>
+    <p id="bimbo">Hello</p>
+    <p class="bimbo">Hello</p>
+
+    <!-- alternatively -->
+
+    <p onclick="greet()">Hello</p>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            //element selector + action/event
+            //option 1 -  $('p').click() ------------------ tag
+            //option 2 -  $('#bimbo').click() ------------------ id
+            //option 3 -  $('.bimbo').click() ------------------ class
+
+            //example
+
+            $('.bimbo').click(function () {
+                alert('Welcome to class')
+            })
+
+        })
+
+        //Alternatively, using core javascript below
+
+        function greet() {
+            alert('Good evening class')
+        }
+
+    </script>
+
+</body>
+
+</html>

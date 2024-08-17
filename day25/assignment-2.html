@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown</title>
+</head>
+
+<body>
+    <label for="">Select a name of a student in your class</label>
+
+
+    <select id="meal" onchange="populateCategory()">
+        <option value="">Select a name of a student in your class</option>
+        <!-- <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option> -->
+    </select>
+
+    <!-- <select id="category">
+        <option value="">Select Category</option>
+    </select> -->
+
+    <script>
+        function populateCategory() {
+            const mealValue = document.getElementById('meal').value;
+            const categorySelect = document.getElementById('category');
+            categorySelect.innerHTML = ''; // Clear existing options
+
+            const categories = {
+                A: ["Soup", "Juice", "Tea", "Others"],
+                B: ["Soup", "Juice", "Water", "Others"],
+                C: ["Soup", "Juice", "Coffee", "Tea", "Others"]
+            };
+
+            categories[mealValue].forEach(category => {
+                const option = document.createElement('option');
+                option.value = category;
+                option.textContent = category;
+                categorySelect.appendChild(option);
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Button</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <button type="button" id="btns" onclick="countLikes()">Like</button>
+
+    </div>
+
+    <script type="text/javascript">
+        var number = 0;
+        // global variable
+
+        function countLikes() {
+            number++;
+            document.getElementById('btns').innerHTML = number + 'Like';
+        }
+        // we need to create likes not like
+
+
+    </script>
+</body>
+
+</html>

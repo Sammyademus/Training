@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter</title>
+
+</head>
+
+<body>
+    <form>
+        <input type="number" name="number1" id="number1">
+        <input type="number" name="number2" id="number2">
+        <button type="button" onclick="add(2,3,'+')">ADD</button>
+        <button type="button" onclick="subtract()">SUBTRACT</button>
+        <button type="button" onclick="divide()">DIVIDE</button>
+
+    </form>
+
+    <script type="text/javascript">
+        // parameter functions
+
+        // function add() {
+        //     var number1 = document.getElementById('number1').value;
+        //     var number2 = document.getElementById('number2').value;
+        //     var answer = calculateNumbers(number1, number2, '+')
+        //     alert(answer)
+        // }
+        // function subtract() {
+        //     var number1 = document.getElementById('number1').value;
+        //     var number2 = document.getElementById('number2').value;
+        //     var answer = calculateNumbers(number1, number2, '-')
+        //     alert(answer)
+        // }
+        // function divide() {
+        //     var number1 = document.getElementById('number1').value;
+        //     var number2 = document.getElementById('number2').value;
+        //     var answer = calculateNumbers(number1, number2, '/')
+        //     alert(answer)
+        // }
+
+
+        function calculateNumbers(number1, number2, operator) {
+            var a = parseInt(number1);
+            var b = parseInt(number2);
+            var c = operator
+
+            if (c == '+') {
+                return a + b;
+            } else if (c == '-') {
+                return a - b;
+            } else {
+                return a / b;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

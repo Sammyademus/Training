@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .buttonWrap {
+        position: relative;
+    }
+
+    #blocker {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+    }
+</style>
+
+<body>
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <label for="check">Check me</label>
+
+    <div class="buttonWrap">
+        <div id="blocker"></div>
+        <button id="button" class="button">Click me</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // Disable blocker.
+            function unblock() {
+                $("#blocker").css("display", "none");
+            }
+
+            // Enable blocker.
+            function block() {
+                $("#blocker").css("display", "block");
+            }
+
+            // Monitor checkbox.
+            $('body').on('click', '#checkbox', function () {
+                if ($(this).prop("checked")) {
+                    unblock();
+                } else {
+                    block();
+                }
+            });
+
+            // Monitor blocker.
+            $('#blocker').on('click', function () {
+                alert('Please check the box.');
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

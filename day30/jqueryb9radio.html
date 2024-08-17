@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Reveal Password Button in JQuery -->
+
+    <form id="reg_form" method="post">
+        <h1 style="color: red;">Radio/Boolean Attributes (yes/no)</h1>
+
+        <p>
+            <label>
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+            </label>
+        </p>
+        <button type="button" id="btns">Submit</button>
+
+        <!-- <p>
+            <label>
+                <input type="checkbox" name="hobbies" value="Sleeping">Sleeping
+                <input type="checkbox" name="hobbies" value="Eating">Eating
+                <input type="checkbox" name="hobbies" value="Reading">Reading
+                <input type="checkbox" name="hobbies" value="Dancing">Dancing
+                <input type="checkbox" name="hobbies" value="Jumping">Jumping
+                <input type="checkbox" name="hobbies" value="Running">Running
+
+            </label>
+        </p>
+        <button type="button" id="btns">Submit</button> -->
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#btns').click(function () {
+                var gender = $('input[name="gender"]:checked').val();
+                alert(gender);
+            })
+
+            // $('').val('')
+
+            // $('#btns').click(function () {
+            //     var hobbies = $('input[name="hobbies"]:checked').val();
+            //     alert(hobbies);
+            // })
+
+        })
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- stopped at 1:58 remaining -->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Loops</h2>
+
+    <div id="result"></div>
+
+    <script>
+
+        // listing the arrays
+
+        const fruits = ["apple", "banana", "mango", "orange", "grape", "coconut"]
+        let output = "";
+
+
+        for (let i = 0; i < fruits.length; i++) {
+            // output = output + fruits[i] + "<br>"
+            output += fruits[i] + "<br>"
+        }
+        // document.write(fruits)
+
+
+        document.getElementById("result").innerHTML = output
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

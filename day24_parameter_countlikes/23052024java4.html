@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" name="firstname" id="firstname">
+
+        <button type="button" onclick="submitForm()">Greet Me</button>
+
+    </form>
+
+
+
+    <script type="text/javascript">
+
+        function submitForm() {
+            var userName = document.getElementById('firstname').value;
+            greetTheUser(userName, 10)
+
+        }
+
+        function greetTheUser(name, time) {
+            if (time > 12) {
+                alert('Good Afternoon ' + name)
+            }
+            else {
+                alert('Good Morning  ' + name)
+            }
+        }
+
+        let date = new Date();
+
+        document.write(date)
+
+    </script>
+
+</body>
+
+</html>

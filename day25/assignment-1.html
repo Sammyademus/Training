@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form id="myForm">
+        <select id="selectNow">
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+        </select>
+        <input type="button" onclick="display()" value="Click">
+    </form>
+    <p>Click the button to get all the options</p>
+    <script>
+        function display() {
+            var a, i, options;
+            a = document.getElementById("selectNow");
+            options = "";
+            for (i = 0; i < a.length; i++) {
+                options = options + "<br> " + a.options[i].text;
+            }
+            document.write("DropDown Options: " + options);
+        }
+    </script>
+</body>
+
+</html>

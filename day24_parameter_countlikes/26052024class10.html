@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Store Promo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #d9534f;
+        }
+
+        label,
+        input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>APEX Store Promotion</h2>
+        <p>Enter your cart details to see if you qualify for the Valentine's Day prize draw.</p>
+
+        <form id="cartForm">
+            <label for="items">Enter the number of items:</label>
+            <input type="number" id="items" name="items" min="1" required>
+
+            <label for="totalCost">Enter the total cost (N):</label>
+            <input type="number" id="totalCost" name="totalCost" min="1" required>
+
+            <button type="button" onclick="checkQualification()">Check Qualification</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function checkQualification() {
+            var items = parseInt(document.getElementById('items').value);
+            var totalCost = parseInt(document.getElementById('totalCost').value);
+            var resultDiv = document.getElementById('result');
+
+            if (isNaN(items) || isNaN(totalCost)) {
+                resultDiv.innerHTML = "Please enter valid numbers.";
+                return;
+            }
+
+            var averageCost = totalCost / items;
+            var qualifies = (totalCost >= 20000 || items >= 10);
+
+            var message = "Total items: " + items + "<br>";
+            message += "Total cost: N" + totalCost + "<br>";
+            message += "Average cost per item: N" + averageCost.toFixed(2) + "<br>";
+
+            if (qualifies) {
+                message += "<strong>Congratulations! You qualify for the Valentine's Day prize draw.</strong>";
+            } else {
+                message += "<strong>Sorry, you do not qualify for the Valentine's Day prize draw.</strong>";
+            }
+
+            resultDiv.innerHTML = message;
+        }
+    </script>
+
+</body>
+
+</html>

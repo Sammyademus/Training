@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+
+<body>
+
+    <form>
+        <p>
+            <label>Firstname</label>
+            <input type="firstname" name="firstname" id="firstname" value="Abimbola">
+        </p>
+        <p>
+            <label>Lastname</label>
+            <input type="lastname" name="lastname" id="lastname">
+        </p>
+        <p>
+            <label>email</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <p>
+            <label>Confirm Password</label>
+            <input type="password" name="password" id="confirm_password">
+        </p>
+
+        <p>
+            <label>Select State</label>
+            <select name="" id="state">
+                <option value="eko">Lagos</option>
+                <option value="Ibadan">Oyo</option>
+            </select>
+        </p>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+
+
+    <script type="text/javascript">
+
+        // var newText = document.getElementById('bimbo').innerHTML = 'Welcome World'
+
+        // alert(newText)
+
+        function submitForm() {
+            var firstname = document.getElementById('firstname').value
+            var lastname = document.getElementById('lastname').value
+            var email = document.getElementById('email').value
+            var password = document.getElementById('password').value
+            var confirm_password = document.getElementById('confirm_password').value
+            var state = document.getElementById('state').value
+
+            alert(state)
+
+        }
+
+        // stopped at 36 mins
+
+
+    </script>
+
+
+</body>
+
+</html>

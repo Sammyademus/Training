@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+
+<body>
+
+    <!-- form -->
+    <form action="" id="tail">
+        <p>
+            <label>Username</label>
+            <input type="text" name="centre" id="centre">
+        </p>
+
+        <label>Password</label>
+        <input type="password" placeholder="enter password" id="password">
+
+        <button type="button" onclick="toggle()" id="tog">Show Password</button>
+    </form>
+
+    <!-- javascript code -->
+    <script type="text/javascript">
+
+        var state = false;
+
+        function toggle() {
+            if (state) {
+                document.getElementById('password').setAttribute("type", "password");
+                document.getElementById('tog').innerHTML = "show password";
+                state = false;
+
+            }
+
+            else {
+                document.getElementById('password').setAttribute("type", "text");
+                document.getElementById('tog').innerHTML = "hide password";
+                state = true;
+
+            }
+
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

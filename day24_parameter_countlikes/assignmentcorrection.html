@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+
+<body>
+
+    <!-- form -->
+    <form action="" id="tail">
+
+        <input type="password" name="password" id="password">
+
+        <button type="button" id="btns" onclick="togglePassword()">Show password</button>
+
+    </form>
+
+    <!-- javascript code -->
+    <script type="text/javascript">
+
+        function togglePassword() {
+            var passwordField = document.getElementById('password')
+
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                document.getElementById('btns').innerHTML = 'Hide Password'
+
+            } else {
+                passwordField.type = 'password'
+                document.getElementById('btns').innerHTML = 'Show Password'
+            }
+
+        }
+
+        // comparing, use == or === i.e. is it the same as?
+        // assigning, use =
+
+
+    </script>
+
+
+</body>
+
+</html>

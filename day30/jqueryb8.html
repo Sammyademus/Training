@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Reveal Password Button in JQuery -->
+
+    <form id="reg_form">
+        <h1 style="color: red;">Login Here</h1>
+        <p>
+            <label>Username</label>
+            <input type="text" name="Username" id="Username">
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <button type="button" id="btns">Show Password</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            // $('#btns').click(function () {
+            //     $('#btns').text('Registered Successfully');
+            // });
+
+            //alternatively
+
+            $('#btns').click(function () {
+                $(this).text('Registered Successfully');
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- stopped at 1:58 remaining -->

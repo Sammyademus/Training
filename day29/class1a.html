@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Change of Color</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .body1 {
+            background-color: black;
+            color: white;
+            height: 500px;
+            width: 400px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="body1">
+        <div>
+            <div style="float: right;">
+                <button type="button" id="blue-button" onclick="changeBackgroundColor('red')"
+                    style="background-color: dodgerblue;">Settings 1</button>
+                <button type="button" id="green-button" onclick="changeBackgroundColor('green')"
+                    style="background-color: green;">Settings
+                    2</button>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <h1>Online Publication</h1>
+            <p>A royalty is a payment to an owner for the ongoing use of their assets or property such as patents,
+                copyrighted works, franchisees, or natural resources.</p>
+
+            <br>
+            <br>
+
+            <h2>Online Publication</h2>
+
+            <p>A royalty is a payment to an owner for the ongoing use of their assets or property such as patents,
+                copyrighted works, franchisees, or natural resources.
+
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function changeBackgroundColor(color) {
+            document.getElementById('body1').style.backgroundColor = color
+
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

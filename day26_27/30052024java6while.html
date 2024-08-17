@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- external css link -->
+</head>
+
+<body>
+
+    <h2>Loops</h2>
+
+    <div id="result"></div>
+
+    <script>
+
+        // 4. While loop
+
+        // var i = 1;
+        // while (i <= 10) {
+        //     console.log(i);
+        //     // when you dont know how many iteration you want to output
+        //     i++;
+        // }
+
+
+        // var i = 1;
+        // while (i <= 10) {
+        //     document.write(i + "<br>")
+        //     console.log(i)
+        //     // when you dont know how many iteration you want to output
+        //     i++;
+        // }
+
+        // 5. Do while - Test before you see the result
+
+        var output = "";
+        let i = 1;
+
+        do {
+            output += i + "<br>"
+            i++
+        } while (i <= 5)
+
+        document.getElementById('result').innerHTML = output
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

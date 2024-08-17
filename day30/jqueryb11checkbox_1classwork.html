@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Reveal Password Button in JQuery -->
+
+    <form id="reg_form" method="post">
+        <h1 style="color: red;">Terms & Condition Agreement (yes/no)</h1>
+
+        <p>
+            <label>
+                <input type="text" name="full_name" placeholder="Full Name" id="name">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                <input type="email" name="email" placeholder="Email Address" id="email">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                <input type="checkbox" name="terms_agreement" value="yes" id="terms">I agree to the Fabric Software and
+                Services Agreement
+            </label>
+        </p>
+
+        </p>
+        <button type="button" id="btns">Send Confirmation</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#btns').click(function () {
+                var fullname = $('#full_name').val;
+                var email = $('#email').val;
+                var agreement = $('#terms').prop('checked');
+
+                if (agreement == false) {
+                    alert('Kindly agree to the terms and condition')
+
+                } else {
+                    alert('Link sent to your email address')
+                }
+
+            })
+
+
+        })
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- stopped at 43 remaining -->

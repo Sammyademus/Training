@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Change of Color</title>
+    <link rel="stylesheet" href="/day29/style.css">
+
+
+</head>
+
+<body>
+
+    <div id="settings">
+        <div style="margin-left: 60%; padding-left: 20px;">
+            <button id="btn1" onclick="changeSettings1()">Setting one</button>
+            <button id="btn2" onclick="changeSettings2()">setting two</button>
+        </div>
+
+        <h1>Online Publication</h1>
+        <p>A royalty is a payment to an owner for the ongoing use of their assets or property such as patents,
+            copyrighted works, franchisees, or natural resources.
+        </p>
+
+        <h2>Online Publication</h2>
+        <p>A royalty is a payment to an owner for the ongoing use of their assets or property such as patents,
+            copyrighted works, franchisees, or natural resources.
+        </p>
+    </div>
+
+    <script type="text/javascript">
+
+        function changeSettings1() {
+            document.getElementById('settings').style = "color:white; background-color:blue";
+        }
+
+        function changeSettings2() {
+            document.getElementById('settings').style = "color:white; background-color:green";
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

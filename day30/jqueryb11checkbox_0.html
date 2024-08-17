@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Prop is used to accept terms n condition
+      -->
+
+    <form id="reg_form" method="post">
+        <h1 style="color: red;">Terms & Condition Agreement (yes/no)</h1>
+
+        <p>
+            <label>
+                <input type="checkbox" name="terms_agreement" value="yes" id="terms">I agree to be a good boy
+            </label>
+        </p>
+        <button type="button" id="btns">Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#btns').click(function () {
+                var terms_agreement = $('#terms').prop('checked');
+
+                alert(terms_agreement);
+            })
+
+
+        })
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- stopped at 43 remaining -->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Loops</h2>
+
+    <div id="result"></div>
+
+    <script>
+
+        // listing the arrays
+
+        // const fruits = ["apple", "banana", "mango", "orange", "grape"]
+        // let output = "";
+
+        // for (let i = 0; i < fruits.length; i++) {
+        //     output = output + fruits[i] + "<br>"
+        //     output += fruits[i] + "<br>"
+        // }
+        // document.write(fruits)
+
+        // document.getElementById("result").innerHTML = output
+
+        // 2. Break is use to exit a loop when the condition has been fulfilled
+
+        var output = "";
+
+        for (var i = 1; i <= 5; i++) {
+            if (i === 5) {
+                break;
+            }
+            output += i + "<br>"
+
+        }
+
+        // alert(output)
+        // console.log(output)
+        document.getElementById('result').innerHTML = output;
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

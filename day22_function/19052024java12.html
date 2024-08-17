@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+
+<body>
+
+  <h1>Jamb Result Checker</h1>
+
+  <form>
+    <p>
+      <label>Centre</label>
+      <select id="centre">
+        <option value="">Select a Centre</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Ogun">Ogun</option>
+        <option value="Osun">Osun</option>
+      </select>
+    </p>
+    <p>
+      <label>score</label>
+      <input type="text" name="score" id="score">
+    </p>
+
+    <button type="button" onclick="checkResult()">Check Result</button>
+  </form>
+
+
+  <script type="text/javascript">
+
+
+    function checkResult() {
+      var centre = document.getElementById('centre').value;
+      var score = document.getElementById('score').value;
+
+
+      if (centre == "") {
+        alert('Kindly complete the fields');
+
+      } else if (score == "") {
+        alert('Please visit Jamb Centre');
+
+      } else if (centre != "" && score < 200) {
+        alert('Come back to write the exam next year');
+
+      } else if (score == "" && score >= 200) {
+        alert('Kindly proceed for Post UTME');
+      }
+    }
+
+  </script>
+
+
+</body>
+
+</html>

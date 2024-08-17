@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown</title>
+</head>
+
+<body>
+
+    <label for="">Select a name from one of the students in your class</label>
+
+    <p><select id="nameDropdown"></select></p>
+
+    <script>
+        var names = ["Oluwole", "Michael", "Damibels", "Funmilayo", "Ashraff", "Stanley"];
+
+        // Get the select element
+        var nameDropdown = document.getElementById("nameDropdown");
+
+        // Populate the dropdown with names
+        for (let i = 0; i < names.length; i++) {
+            var option = document.createElement("option");
+            option.value = names[i];
+            option.textContent = names[i];
+            nameDropdown.appendChild(option);
+        }
+    </script>
+</body>
+
+</html>

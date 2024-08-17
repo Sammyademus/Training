@@ -1,0 +1,14 @@
+#settings {
+  height: 270px;
+  width: 45%;
+}
+
+#btn1 {
+  background-color: blue;
+  color: white;
+}
+
+#btn2 {
+  background-color: green;
+  color: white;
+}

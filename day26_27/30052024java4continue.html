@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- external css link -->
+</head>
+
+<body>
+
+    <h2>Loops</h2>
+
+    <div id="result"></div>
+
+    <script>
+
+        // listing the arrays
+
+        // const fruits = ["apple", "banana", "mango", "orange", "grape"]
+        // let output = "";
+
+        // for (let i = 0; i < fruits.length; i++) {
+        //     output = output + fruits[i] + "<br>"
+        //     output += fruits[i] + "<br>"
+        // }
+        // document.write(fruits)
+
+        // document.getElementById("result").innerHTML = output
+
+        // 2. Break is use to exit a loop when the condition has been fulfilled
+
+        // var output = "";
+
+        // for (var i = 1; i <= 5; i++) {
+        //     if (i === 5) {
+        //         break;
+        //     }
+        //     output += i + "<br>"
+
+        // }
+
+        // // alert(output)
+        // // console.log(output)
+        // document.getElementById('result').innerHTML = output;
+
+        // 3. Continue (break n continue)
+
+        // var output = "";
+
+        // for (var i = 1; i <= 5; i++) {
+        //     if (i === 2) {
+        //         continue;
+        //         // Note that 3 was skipped and the iteration continue from 4 (continue is used instead of skip in js)
+        //     }
+        //     output += i + "<br>"
+        // }
+
+        // document.getElementById('result').innerHTML = output;
+
+        // to skip 2 numbers
+
+        var output = "";
+
+        for (var i = 1; i <= 5; i++) {
+            if (i === 2 || i === 3) {
+                continue;
+                // Note that using && - it will add the 2 numbers while || will remove the 2 numbers
+            }
+            output += i + "<br>"
+        }
+
+        document.getElementById('result').innerHTML = output;
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

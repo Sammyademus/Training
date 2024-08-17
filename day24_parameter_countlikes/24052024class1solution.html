@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <input type="number" name="number1" id="number1">
+        <input type="number" name="number2" id="number2">
+        <button type="button" onclick="add()">Add</button>
+        <button type="button" onclick="subtract()">Subtract</button>
+        <button type="button" onclick="divide()">Divide</button>
+
+    </form>
+
+    <script type="text/javascript">
+
+        function add() {
+            var number1 = document.getElementById('number1').value;
+            var number1 = document.getElementById('number2').value;
+            var total = parseInt(number1) + parseInt(number2);
+            alert(total);
+        }
+
+        function subtract() {
+            var number1 = document.getElementById('number1').value;
+            var number1 = document.getElementById('number2').value;
+            var total = parseInt(number1) - parseInt(number2);
+            alert(total);
+        }
+
+        function divide() {
+            var number1 = document.getElementById('number1').value;
+            var number1 = document.getElementById('number2').value;
+            var total = parseInt(number1) / parseInt(number2);
+            alert(total);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
